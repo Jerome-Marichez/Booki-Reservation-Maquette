@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap");
+
+/********************** GENERAL **********************/ 
+
+/** target all HTML TAG  **/
+
+:root {
+    --bg-color: white;
+   --blue:#0065FC; 
+   --lightblue: #DEEBFF; 
+    --grey: #F2F2F2; 
+    --black: black;
+
+}
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+
+}
+body {background-color: var(--bg-color);  -webkit-font-smoothing: antialiased;}
+/** end target all HTML TAG **/
+
+
+li {list-style:none;}
+h2 {   margin-top: 0;
+    margin-bottom: 0;}
+
+.container-search,.container-filter,.container-main,.container-activite,.container-footer 
+{ 
+    padding-left: 25px; 
+    padding-right: 25px;
+}
+
+/********************** END GENERAL **********************/ 
+
+/********************** HEADER **********************/
+.container-header {
+    display: flex;
+    margin-right: 1%;
+    align-items: flex-start;
+}
+
+.logo {
+    flex-grow: 1;
+}
+
+.logo > img {  -moz-transform:scale(0.6);
+    -webkit-transform:scale(0.6);
+    transform:scale(0.6); margin-top: 10px; }
+
+.nav-menu  {
+ display: flex;
+ flex-wrap: wrap;
+ color:var(--black);
+}
+
+.border_active{
+    border-top: 3px solid;
+    color: var(--blue);
+    width: 60%;  
+    padding-bottom: 7%;
+}
+
+.nav-menu > ul {
+    display:flex;
+}
+.nav-menu > ul > li:last-child {
+    color: var(--black);
+    padding-right: 50px;
+    padding-left: 50px; 
+}
+
+.active {color: var(--blue);}
+
+
+/********************** END HEADER **********************/
+
+
+
+/********************** SEARCH SECTION  **********************/
+
+.container-search { 
+    display: flex;
+    flex-direction: column;
+}
+
+.container-filter { 
+    display: flex;
+    flex-direction: column;
+}
+
+.container-filter > .subcontainer { 
+    display: flex;
+    flex-direction: row;
+}
+
+
+/** COMPONENT SEARCH FUNCTION **/ 
+
+.search-input-group > input[type="text"], textarea {
+    background-color: var(--bg-color);
+    
+}
+.search-input-group > button, input[type="button"], input[type="reset"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+.search-input-group > .inputgps { 
+    background-color: var(--grey);
+    min-width: 50px;
+    max-width: 50px;
+    height: 42.5px;
+    border-top-left-radius: 15px 15px;
+    border-bottom-left-radius: 15px 15px;
+    
+}
+
+
+.search-input-group > .inputbutton { 
+    background-color: var(--grey);
+    min-width: 135px;
+    max-width: 135px;
+  
+    height: 42.5px; 
+    background-color: var(--blue);
+    color: var(--bg-color);
+    border-top-right-radius: 15px 15px;
+    border-bottom-right-radius: 15px 15px;
+    margin-left: -5px;
+}
+
+
+.search-input-group > .inputclass { 
+    background-color: var(--grey);
+    min-width: 270px;
+    max-width: 270px;
+    text-decoration: none;
+    border: 1px solid;
+    border-color: var(--grey);
+    height: 35px;
+    padding: 20px;
+    margin-left: -5px;
+}
+/** END COMPONENT SEARCH FUNCTION **/  
+
+
+/********************** SEARCH SECTION **********************/
+
