@@ -1,7 +1,6 @@
-# FR:
+# {FR} Projet_P2_OpenClassRoom
 _____________________________________________________________________
-
-# Projet_P2_OpenClassRoom
+ 
  Projet visant à intégrer une maquette au format png vers une maquette HTML/CSS responsive pour le projet 2 de OpenClassRoom sans devoir utiliser de framework CSS ou de préprocesseur CSS.
 
 # Outils
@@ -20,5 +19,6 @@ LIEN des deux fichiers INI
 LIEN Maquette PNG 
 
 
-#EN
+_____________________________________________________________________
+# {EN} Projet_P2_OpenClassRoom
 _____________________________________________________________________
