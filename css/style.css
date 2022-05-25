@@ -5,105 +5,117 @@
 /** target all HTML TAG  **/
 
 :root {
-  --bg-color: white;
-  --blue: #0065fc;
-  --lightblue: #deebff;
-  --grey: #f2f2f2;
-  --black: black;
+    --bg-color: white;
+    --blue: #0065fc;
+    --lightblue: #deebff;
+    --grey: #f2f2f2;
+    --black: black;
+    --shadowcolor: 0,0,0;
+    
 }
 
 * {
-  box-sizing: border-box;
-  font-family: "Raleway", sans-serif;
-  font-weight: 500;
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
 }
 
 body {
-  background-color: var(--bg-color);
-  -webkit-font-smoothing: antialiased;
+    background-color: var(--bg-color);
+    -webkit-font-smoothing: antialiased;
 }
+
 /** end target all HTML TAG **/
 
 li {
-  list-style: none;
+    list-style: none;
 }
+
 h2 {
-  margin-top: 0;
-  margin-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .container-search,
 .container-filter,
-.container-main,
 .container-activite,
 .container-footer {
-  padding-left: 25px;
-  padding-right: 25px;
+    padding-left: 55px;
+   
 }
 
+
+
+.container-main {
+    padding-left: 25px;
+    padding-right: 25px;
+}
 button,
 input[type="button"],
 input[type="reset"] {
-  background: none;
-  color: inherit;
-  border: none;
-  padding: 0;
-  font: inherit;
-  cursor: pointer;
-  outline: inherit;
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
 }
-.padding-20 { 
+
+.padding-20 {
     padding-top: 20px;
 }
+
 .fontawesome {
-  font-family: "Font Awesome 6 Free";
-  font-weight: 900;
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
 }
 
 /********************** END GENERAL **********************/
 
 /********************** HEADER **********************/
 .container-header {
-  display: flex;
-  margin-right: 1%;
-  align-items: flex-start;
+    display: flex;
+    margin-right: 1%;
+    align-items: flex-start;
 }
 
 .logo {
-  flex-grow: 1;
+    flex-grow: 1;
 }
 
-.logo > img {
-  -moz-transform: scale(0.6);
-  -webkit-transform: scale(0.6);
-  transform: scale(0.6);
-  margin-top: 10px;
+.logo>img {
+    -moz-transform: scale(0.6);
+    -webkit-transform: scale(0.6);
+    transform: scale(0.6);
+    margin-top: 10px;
 }
 
 .nav-menu {
-  display: flex;
-  flex-wrap: wrap;
-  color: var(--black);
+    display: flex;
+    flex-wrap: wrap;
+    color: var(--black);
 }
 
 .border_active {
-  border-top: 3px solid;
-  color: var(--blue);
-  width: 60%;
-  padding-bottom: 7%;
+    border-top: 3px solid;
+    color: var(--blue);
+    width: 60%;
+    padding-bottom: 7%;
 }
 
-.nav-menu > ul {
-  display: flex;
+.nav-menu>ul {
+    display: flex;
 }
-.nav-menu > ul > li:last-child {
-  color: var(--black);
-  padding-right: 50px;
-  padding-left: 50px;
+
+.nav-menu>ul>li:last-child {
+    color: var(--black);
+    padding-right: 50px;
+    padding-left: 50px;
 }
 
 .active {
-  color: var(--blue);
+    color: var(--blue);
 }
 
 /********************** END HEADER **********************/
@@ -111,141 +123,145 @@ input[type="reset"] {
 /********************** SEARCH SECTION  **********************/
 
 .container-search {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 /** COMPONENT SEARCH FUNCTION **/
 
-.search-input-group > input[type="text"],
+.search-input-group>input[type="text"],
 textarea {
-  background-color: var(--bg-color);
+    background-color: var(--bg-color);
 
 }
 
 .inputgps::before {
-  content: "\f3c5";
+    content: "\f3c5";
 }
 
-.search-input-group > .inputgps {
-    
-  background-color: var(--grey);
-  min-width: 50px;
-  max-width: 50px;
-  height: 42.5px;
-  border-top-left-radius: 15px 15px;
-  border-bottom-left-radius: 15px 15px;
+.search-input-group>.inputgps {
+
+    background-color: var(--grey);
+    min-width: 50px;
+    max-width: 50px;
+    height: 42.5px;
+    border-top-left-radius: 15px 15px;
+    border-bottom-left-radius: 15px 15px;
 }
 
-.search-input-group > .inputbutton {
-  min-width: 135px;
-  max-width: 135px;
-  height: 42.5px;
-  background-color: var(--blue);
-  color: var(--bg-color);
-  border-top-right-radius: 15px 15px;
-  border-bottom-right-radius: 15px 15px;
-  margin-left: -5px;
+.search-input-group>.inputbutton {
+    min-width: 135px;
+    max-width: 135px;
+    height: 42.5px;
+    background-color: var(--blue);
+    color: var(--bg-color);
+    border-top-right-radius: 15px 15px;
+    border-bottom-right-radius: 15px 15px;
+    margin-left: -5px;
 }
 
-.search-input-group > .inputclass {
-  background-color: var(--grey);
-  min-width: 250px;
-  max-width: 250px;
-  text-decoration: none;
-  border: 1px solid;
-  border-color: var(--grey);
-  height: 35px;
-  padding: 20px;
-  margin-left: -5px;
+.search-input-group>.inputclass {
+    background-color: var(--grey);
+    min-width: 250px;
+    max-width: 250px;
+    text-decoration: none;
+    border: 1px solid;
+    border-color: var(--grey);
+    height: 35px;
+    padding: 20px;
+    margin-left: -5px;
 }
+
 /** END COMPONENT SEARCH FUNCTION **/
 
 /********************** END SEARCH SECTION **********************/
 
 /********************** FILTER SECTION **********************/
 .container-filter {
-  padding-top: 1%;
-  display: flex;
-  flex-direction: column;
+    padding-top: 1%;
+    display: flex;
+    flex-direction: column;
 }
 
-.container-filter > .subcontainer {
+.container-filter>.subcontainer {
     
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .filter-input-group {
-  padding-left: 25px;
+    padding-left: 25px;
 }
 
-.filter-input-group > .background_icone {
-  position: absolute;
-  background-color: var(--lightblue);
-  margin-left: 1px;
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
+.filter-input-group>.background_icone {
+    position: absolute;
+    background-color: var(--lightblue);
+    margin-left: 1px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
 }
 
-.filter-input-group > .inputtext {
-  background-color: var(--white);
-  border-radius: 43px / 35px;
-  width: auto;
-  border: 2px solid;
-  border-color: var(--grey);
-  height: 35px;
-  padding: 20px;
+.filter-input-group>.inputtext {
+    background-color: var(--white);
+    border-radius: 43px / 35px;
+    width: auto;
+    border: 2px solid;
+    border-color: var(--grey);
+    height: 35px;
+    padding: 20px;
 }
 
-.filter-input-group > .size_economique,
+.filter-input-group>.size_economique,
 .size_romantique {
-  min-width: 180px;
-  max-width: 180px;
+    min-width: 180px;
+    max-width: 180px;
 }
 
-.filter-input-group > .size_animaux {
-  min-width: 225px;
-  max-width: 225px;
+.filter-input-group>.size_animaux {
+    min-width: 225px;
+    max-width: 225px;
 }
 
-.filter-input-group > .size_familial {
-  min-width: 150px;
-  max-width: 150px;
+.filter-input-group>.size_familial {
+    min-width: 150px;
+    max-width: 150px;
 }
 
 .icone_romantique::before {
-  content: "\f004";
-  color: var(--blue);
+    content: "\f004";
+    color: var(--blue);
 }
 
 .icone_animaux::before {
-  content: "\f6d3";
-  color: var(--blue);
+    content: "\f6d3";
+    color: var(--blue);
 }
+
 .icone_familial::before {
-  content: "\e59d";
-  color: var(--blue);
+    content: "\e59d";
+    color: var(--blue);
 }
+
 .icone_economique::before {
-  content: "\f3c5";
-  color: var(--blue);
+    content: "\f3c5";
+    color: var(--blue);
 }
 
 .icone_info {
-  background-color: var(--white);
-  border: 1px solid var(--grey);
-  margin-left: 1px;
-  width: 35px;
-  height: 35px;
-  border-radius: 50%;
-  margin-right: 10px;
+    background-color: var(--white);
+    border: 1px solid var(--grey);
+    margin-left: 1px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 10px;
 }
+
 .icone_info::before {
-  content: "\f129";
-  color: var(--blue);
+    content: "\f129";
+    color: var(--blue);
 }
 
 /********************** END FILTER SECTION  **********************/
@@ -253,71 +269,121 @@ textarea {
 /********************** MAIN (HEBERGEMENT MARSEILLE) SECTION **********************/
 
 
-.container-main { 
-    
-  
-
+.container-main {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
 }
 
-.container-main   > .subcontainer {
-    padding-top: 35px;
-    padding-left: 30px; 
-    padding-right: 30px; 
-    padding-bottom: 35px;
 
+.container-main>.subcontainer {
+    border-radius: 15px;
+    padding-top: 35px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 35px;
     background-color: var(--grey);
-  
     display: flex;
     flex-direction: column;
 }
 
-.container-main > .subcontainer > h2 {
+.container-main>.subcontainer>h2 {
     padding-left: 10px;
+    padding-bottom: 20px
 }
 
-.container-main > .subcontainer > h3 {
+.container-main>.subcontainer>h3 {
     padding-left: 20px;
 }
 
 
-.container-main > .subcontainer:first-child{
-    flex: 0 0 60%;
+.container-main>.subcontainer:first-child {
+    flex: 0 0 64%;
 }
-.container-main > .subcontainer:last-child{
-    flex: 0 0 40%;
+
+.container-main>.subcontainer:last-child {
+    flex: 0 0 31%;
 }
+
+.container-main>.subcontainer>.card-container-left { 
+    display:flex;
+    flex-wrap: wrap; 
+    justify-content: space-around;
+    gap: 20px;
+}
+
+/** CARD COMPONENT **/ 
+.card {
+    flex: 0 0 230px; 
+    /**margin-right: 20px;**/
+    background-color: var(--bg-color);
+    box-shadow: 0 4px 8px 0 rgba(var(--shadowcolor),0.2);
+    transition: 0.3s;
+    border-radius: 20px;
+    max-width: 300px;
+
+  }
+ .card > .container >  h4,p { 
+     padding-left: 15px;
+     margin-top: 10px;
+     margin-bottom: 10px;
+ } 
+ .hebergement_img {
+    border-radius: 10px 10px 0 0;
+    max-height:120px;
+    height:auto;
+
+    width:100%;
+  }
+
+  .rating { 
+      display:flex;
+      padding-left: 15px;
+      padding-bottom: 10px;
+  }
+  .icone_stars_blue::before {
+    content: "\f005";
+    color: var(--blue);
+  }
+
+  .icone_stars::before {
+    content: "\f005";
+    color: var(--grey);
+  }
+/** END CARD COMPONENT **/ 
+
+
 /********************** END MAIN (HEBERGEMENT MARSEILLE) SECTION  **********************/
 
 
 
 
 /********************** FOOTER SECTION **********************/
-.container-footer { 
+.container-footer {
+    
     background-color: var(--grey);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding-bottom: 50px;
-  }
+}
 }
 
-.container-footer > .subcontainer { 
+.container-footer>.subcontainer {
     padding-top: 1%;
-
     margin-left: 10%;
     display: flex;
     flex-direction: column;
-    
+
 }
-.container-footer > .subcontainer > ul 
-{
+
+.container-footer>.subcontainer>ul {
     margin: 0;
     margin-block-end: 0em;
     padding-inline-start: 0px;
 }
-.container-footer > .subcontainer > ul > li {
+
+.container-footer>.subcontainer>ul>li {
     padding-top: 10px;
 }
 
