@@ -76,18 +76,20 @@ input[type="reset"] {
 /********************** HEADER **********************/
 .container-header {
     display: flex;
-    margin-right: 1%;
+    margin-right: 35px;
     align-items: flex-start;
 }
 
 .logo {
+     padding-left: 15px;
+    padding-top: 10px;
     flex-grow: 1;
 }
 
 .logo>img {
-    -moz-transform: scale(0.6);
-    -webkit-transform: scale(0.6);
-    transform: scale(0.6);
+    -moz-transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
     margin-top: 10px;
 }
 
@@ -101,7 +103,7 @@ input[type="reset"] {
     border-top: 3px solid;
     color: var(--blue);
     width: 60%;
-    padding-bottom: 7%;
+    padding-bottom: 10%;
 }
 
 .nav-menu>ul {
@@ -123,6 +125,7 @@ input[type="reset"] {
 /********************** SEARCH SECTION  **********************/
 
 .container-search {
+    padding-top: 10px;
     display: flex;
     flex-direction: column;
 }
@@ -178,13 +181,14 @@ textarea {
 
 /********************** FILTER SECTION **********************/
 .container-filter {
-    padding-top: 1%;
+    padding-top: 20px;
+    margin-left: 10px;
     display: flex;
     flex-direction: column;
 }
 
 .container-filter>.subcontainer {
-    
+    margin-top: 10px;
     display: flex;
     flex-direction: row;
     align-items: center;
