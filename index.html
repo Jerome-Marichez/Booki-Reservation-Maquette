@@ -9,10 +9,9 @@
     <title>Titre de la page</title>
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/style.css" />
-    <script
-      src="https://kit.fontawesome.com/4aed19a16a.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/4aed19a16a.js" crossorigin="anonymous"></script> </script>
+
+ 
   </head>
 
   <body>
@@ -22,9 +21,12 @@
        
         
         <div class="nav-menu">
+
+
+
          <!-- <nav>-->
             <div class="border_active"></div>
-            <ul>
+                   <ul>
               <li class="active">Hébergements</li>
               <li>Activités</li>
             </ul>
@@ -35,14 +37,15 @@
 
     <div class="container-search">
       <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
-
+  
       <p>En plein centre ville ou en pleine nature</p>
 
   
 
       <div class="search-input-group">
 
-        <input class="inputgps" type="button" value="GPS">
+        <button class="fontawesome inputgps" type="button" value="">   
+      </button>
     
 
         <input class="inputclass" type="text" placeholder="Marseille, France">
@@ -54,12 +57,61 @@
 
     </div>
 
-    <div class="container-filter">
-      <div class="subcontainer"></div>
+<div class="container-filter">
       <div class="subcontainer">
+        <h3>Filtres: </h3>
+
+        <div class="filter-input-group">
+
+          <button class="background_icone fontawesome icone_economique" type="button" value="">
+          </button>
+
+          <input class="inputtext size_economique" type="text" value="          Economique" disabled>
+
+        </div>
+
+
+        <div class="filter-input-group">
+
+          <button class="background_icone fontawesome icone_familial" type="button" value="">
+          </button>
+
+          <input class="inputtext size_familial" type="text" value="          Familial" disabled>
+
+        </div>
+
+
+        <div class="filter-input-group">
+
+          <button class="background_icone fontawesome icone_romantique" type="button" value="">
+          </button>
+
+          <input class="inputtext size_romantique" type="text" value="          Romantique" disabled>
+
+        </div>
+
+
+        <div class="filter-input-group">
+
+          <button class="background_icone fontawesome icone_animaux" type="button" value="">
+          </button>
+
+          <input class="inputtext size_animaux" type="text" value="          Animaux autorisés" disabled>
+
+        </div>
+
+
+
+
+</div>
+      <div class="subcontainer">
+        <span class="fontawesome icone_animaux" type="button" value="">
+        </span>
         <p>Plus de 500 logements sont disponibles dans cette ville</p>
       </div>
-    </div>
+</div>
+
+
 
     <div class="container-main">
       <main>
