@@ -1,176 +1,145 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0,user-scalable=no"
-    />
-    <title>Titre de la page</title>
-    <link rel="stylesheet" href="./css/normalize.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <script src="https://kit.fontawesome.com/4aed19a16a.js" crossorigin="anonymous"></script> </script>
-
- 
-  </head>
-
-  <body>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+        <title>Titre de la page</title>
+        <link rel="stylesheet" href="./css/normalize.css">
+        <link rel="stylesheet" href="./css/style.css">
+        <script src="https://kit.fontawesome.com/4aed19a16a.js" crossorigin="anonymous"></script>
+    </script>
+</head>
+<body>
     <div class="container-header">
-      <!--<header>-->
-        <div class="logo"><img src="./images/logo/Booki.png"></img></div>
-       
-        
+        <!--<header>-->
+        <div class="logo">
+            <img src="./images/logo/Booki.png"></img>
+        </div>
         <div class="nav-menu">
-
-
-
-         <!-- <nav>-->
+            <!-- <nav>-->
             <div class="border_active"></div>
-                   <ul>
-              <li class="active">Hébergements</li>
-              <li>Activités</li>
+            <ul>
+                <li class="active">Hébergements</li>
+                <li>Activités</li>
             </ul>
-         <!-- </nav>-->
+            <!-- </nav>-->
         </div>
-    <!--  </header>-->
+        <!--  </header>-->
     </div>
-
     <div class="container-search">
-      <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
-  
-      <p>En plein centre ville ou en pleine nature</p>
-
-  
-
-      <div class="search-input-group">
-
-        <button class="fontawesome inputgps" type="button" value="">   
-      </button>
-    
-
-        <input class="inputclass" type="text" placeholder="Marseille, France">
-        <input class="inputbutton" type="button" value="Rechercher">
-
-      </div>
-
-
-
+        <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
+        <p>En plein centre ville ou en pleine nature</p>
+        <div class="search-input-group">
+            <button class="fontawesome inputgps" type="button" value=""></button>
+            <input class="inputclass" type="text" placeholder="Marseille, France">
+            <input class="inputbutton" type="button" value="Rechercher">
+        </div>
     </div>
-
-<div class="container-filter">
-      <div class="subcontainer">
-        <h3>Filtres: </h3>
-
-        <div class="filter-input-group">
-
-          <button class="background_icone fontawesome icone_economique" type="button" value="">
-          </button>
-
-          <input class="inputtext size_economique" type="text" value="          Economique" disabled>
-
+    <div class="container-filter">
+        <div class="subcontainer">
+            <h3>Filtres:</h3>
+            <div class="filter-input-group">
+                <button class="background_icone fontawesome icone_economique" type="button" value=""></button>
+                <input
+                    class="inputtext size_economique"
+                    type="text"
+                    value="          Economique"
+                    disabled
+                >
+            </div>
+            <div class="filter-input-group">
+                <button class="background_icone fontawesome icone_familial" type="button" value=""></button>
+                <input
+                    class="inputtext size_familial"
+                    type="text"
+                    value="          Familial"
+                    disabled
+                >
+            </div>
+            <div class="filter-input-group">
+                <button class="background_icone fontawesome icone_romantique" type="button" value=""></button>
+                <input
+                    class="inputtext size_romantique"
+                    type="text"
+                    value="          Romantique"
+                    disabled
+                >
+            </div>
+            <div class="filter-input-group">
+                <button class="background_icone fontawesome icone_animaux" type="button" value=""></button>
+                <input
+                    class="inputtext size_animaux"
+                    type="text"
+                    value="          Animaux autorisés"
+                    disabled
+                >
+            </div>
         </div>
-
-
-        <div class="filter-input-group">
-
-          <button class="background_icone fontawesome icone_familial" type="button" value="">
-          </button>
-
-          <input class="inputtext size_familial" type="text" value="          Familial" disabled>
-
+        <div class="subcontainer">
+            <button class="background_icone fontawesome icone_info" type="button" value=""></button>
+            <p>Plus de 500 logements sont disponibles dans cette ville</p>
         </div>
-
-
-        <div class="filter-input-group">
-
-          <button class="background_icone fontawesome icone_romantique" type="button" value="">
-          </button>
-
-          <input class="inputtext size_romantique" type="text" value="          Romantique" disabled>
-
-        </div>
-
-
-        <div class="filter-input-group">
-
-          <button class="background_icone fontawesome icone_animaux" type="button" value="">
-          </button>
-
-          <input class="inputtext size_animaux" type="text" value="          Animaux autorisés" disabled>
-
-        </div>
-
-
-
-
-</div>
-      <div class="subcontainer">
-        <span class="fontawesome icone_animaux" type="button" value="">
-        </span>
-        <p>Plus de 500 logements sont disponibles dans cette ville</p>
-      </div>
-</div>
-
-
-
+    </div>
+    <div class="padding-20"></div>
     <div class="container-main">
-      <main>
-        <div class="subcontainer">
-          <h2>Hébergements à Marseille</h2>
-
-          <div class="card-container-left"></div>
-        </div>
-
-        <div class="subcontainer">
-          <div class="container-popular">
-            <h2>Les plus populaires</h2>
-            <!-- Star Logo -->
-          </div>
-
-          <div class="card-container-right">
-            <!-- card  --->
-          </div>
-        </div>
-
-        <h2>Afficher plus</h2>
-      </main>
+      
+            <div class="subcontainer">
+                <h2>Hébergements à Marseille</h2>
+                <div class="card-container-left"></div>
+                <h3>Afficher plus</h3>
+            </div>
+            <div class="subcontainer">
+                <div class="container-popular">
+                    <h2>Les plus populaires</h2>
+                    <!-- Star Logo -->
+                </div>
+                <div class="card-container-right">
+                    <!-- card  ---></div>
+            </div>
+           
+       
     </div>
-
     <div class="container-activite">
-      <h2>Activités à Marseille</h2>
-
-      <div class="subcontainer">
-        <!-- card stuff -->
-      </div>
+        <h2>Activités à Marseille</h2>
+        <div class="subcontainer">
+            <!-- card stuff --></div>
     </div>
-
     <div class="container-footer">
-     <!-- <footer>-->
+        <!-- <footer>-->
         <div class="subcontainer">
-          <ul>
-            <li><h3>A propos</h3></li>
-            <li>Fonctionnement du site</li>
-            <li>Conditions générales de vente</li>
-            <li>Données et confidentialité</li>
-          </ul>
+            <ul>
+                <li>
+                    <h3>A propos</h3>
+                </li>
+                <li>Fonctionnement du site</li>
+                <li>Conditions générales de vente</li>
+                <li>Données et confidentialité</li>
+            </ul>
+        </div>
+        <div class="subcontainer">
+            <ul>
+                <li>
+                    <h3>Nos hébergements</h3>
+                </li>
+                <li>Charte qualité</li>
+                <li>Soumettre votre hôtel</li>
+            </ul>
+        </div>
+        <div class="subcontainer">
+            <ul>
+                <li>
+                    <h3>Assistance</h3>
+                </li>
+                <li>Centre d'aide</li>
+                <li>nous contacter</li>
+            </ul>
         </div>
 
         <div class="subcontainer">
-          <ul>
-            <li><h3>Nos hébergements</h3></li>
-            <li>Charte qualité</li>
-            <li>Soumettre votre hôtel</li>
-          </ul>
-        </div>
 
-        <div class="subcontainer">
-          <ul>
-            <li><h3>Assistance</h3></li>
-            <li>Centre d'aide</li>
-            <li>nous contacter</li>
-          </ul>
-        </div>
-     <!-- </footer>-->
+
+
+        <!-- </footer>-->
     </div>
-  </body>
+</body>
 </html>

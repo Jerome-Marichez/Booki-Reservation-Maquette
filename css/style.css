@@ -1,6 +1,6 @@
 /********************** GENERAL **********************/
 
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100,200,300,500,600,700&display=swap");
 
 /** target all HTML TAG  **/
 
@@ -15,6 +15,7 @@
 * {
   box-sizing: border-box;
   font-family: "Raleway", sans-serif;
+  font-weight: 500;
 }
 
 body {
@@ -51,7 +52,9 @@ input[type="reset"] {
   cursor: pointer;
   outline: inherit;
 }
-
+.padding-20 { 
+    padding-top: 20px;
+}
 .fontawesome {
   font-family: "Font Awesome 6 Free";
   font-weight: 900;
@@ -117,6 +120,7 @@ input[type="reset"] {
 .search-input-group > input[type="text"],
 textarea {
   background-color: var(--bg-color);
+
 }
 
 .inputgps::before {
@@ -124,6 +128,7 @@ textarea {
 }
 
 .search-input-group > .inputgps {
+    
   background-color: var(--grey);
   min-width: 50px;
   max-width: 50px;
@@ -145,8 +150,8 @@ textarea {
 
 .search-input-group > .inputclass {
   background-color: var(--grey);
-  min-width: 270px;
-  max-width: 270px;
+  min-width: 250px;
+  max-width: 250px;
   text-decoration: none;
   border: 1px solid;
   border-color: var(--grey);
@@ -166,6 +171,7 @@ textarea {
 }
 
 .container-filter > .subcontainer {
+    
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -181,14 +187,14 @@ textarea {
   margin-left: 1px;
   width: 45px;
   height: 45px;
-  border-radius: 43%;
+  border-radius: 50%;
 }
 
 .filter-input-group > .inputtext {
   background-color: var(--white);
   border-radius: 43px / 35px;
   width: auto;
-  border: 3px solid;
+  border: 2px solid;
   border-color: var(--grey);
   height: 35px;
   padding: 20px;
@@ -229,6 +235,90 @@ textarea {
 }
 
 .icone_info {
+  background-color: var(--white);
+  border: 1px solid var(--grey);
+  margin-left: 1px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.icone_info::before {
+  content: "\f129";
+  color: var(--blue);
 }
 
 /********************** END FILTER SECTION  **********************/
+
+/********************** MAIN (HEBERGEMENT MARSEILLE) SECTION **********************/
+
+
+.container-main { 
+    
+  
+
+    display: flex;
+    flex-direction: row;
+}
+
+.container-main   > .subcontainer {
+    padding-top: 35px;
+    padding-left: 30px; 
+    padding-right: 30px; 
+    padding-bottom: 35px;
+
+    background-color: var(--grey);
+  
+    display: flex;
+    flex-direction: column;
+}
+
+.container-main > .subcontainer > h2 {
+    padding-left: 10px;
+}
+
+.container-main > .subcontainer > h3 {
+    padding-left: 20px;
+}
+
+
+.container-main > .subcontainer:first-child{
+    flex: 0 0 60%;
+}
+.container-main > .subcontainer:last-child{
+    flex: 0 0 40%;
+}
+/********************** END MAIN (HEBERGEMENT MARSEILLE) SECTION  **********************/
+
+
+
+
+/********************** FOOTER SECTION **********************/
+.container-footer { 
+    background-color: var(--grey);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 50px;
+  }
+}
+
+.container-footer > .subcontainer { 
+    padding-top: 1%;
+
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    
+}
+.container-footer > .subcontainer > ul 
+{
+    margin: 0;
+    margin-block-end: 0em;
+    padding-inline-start: 0px;
+}
+.container-footer > .subcontainer > ul > li {
+    padding-top: 10px;
+}
+
+/********************** END FOOTER SECTION **********************/
