@@ -6,6 +6,8 @@ _____________________________________________________________________
 # Outils
 -> VSCODE
 -> Justinmind
+-> GIMP
+-> PixelPefect (extension chrome)
 
 # Librairie 
 FontAwesome 6 
