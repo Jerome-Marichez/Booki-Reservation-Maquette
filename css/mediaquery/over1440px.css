@@ -1,0 +1,16 @@
+@media only screen and (min-width: 1399px) {
+    .container-footer > .subcontainer:nth-child(1)
+    {
+        
+    }
+    .container-footer > .subcontainer:nth-child(2)
+    {
+        padding-right: 100px;
+    }
+    .container-footer > .subcontainer:nth-child(3)
+    {
+        margin-right: 140px;
+    }
+
+
+}
