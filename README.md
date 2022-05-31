@@ -5,7 +5,6 @@ _____________________________________________________________________
 
 # Outils
 -> VSCODE
--> Justinmind
 -> GIMP
 -> PixelPefect (extension chrome)
 

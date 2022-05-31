@@ -1,22 +1,93 @@
 @media only screen and (max-width: 1441px) {
+  /** GENERAL**/
+  .title_center_flex {
+    display: flex;
+    justify-content: space-around;
+  }
+  /** END GENERAL **/
+
+  /** CONTAINER FILTER **/
+  .container-filter > .subcontainer > .filter-input-group:last-child {
+    margin-left: 63px;
+  }
+  /** END CONTAINER FILTER **/
+
   /** CONTAINER MAIN **/
   .container-main {
     flex-direction: column-reverse;
   }
   .container-main > .subcontainer:first-child {
     margin-top: 30px;
-    /*flex: 0 0 100%;*/
-  }
-  .card-container-left > .card {
-    flex: 0 0 300px;
   }
 
-  .container-main {
-    flex-wrap: wrap;
+  .container-main > .subcontainer > h2 {
+    display: flex;
   }
+  .card-container-left > .card {
+    flex: 0 0 45%;
+  }
+
+  .card-container-right {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .container-main > .subcontainer > .container-popular {
+    /**justify-content: space-evenly;**/
+  }
+
+   
+
+
+  .container-main > .subcontainer > .card-container-right {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .container-main > .subcontainer:last-child > .card-container-right > .card {
+    flex: 0 0 48%;
+    margin-bottom: 0px;
+  }
+
+  .container-main
+    > .subcontainer:last-child
+    > .card-container-right
+    > .card:last-child {
+    flex: 0 0 48%;
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+
+ 
+
+  .container-main > .subcontainer:last-child > .card-container-right {
+    /**justify-content: space-between;**/
+  }
+  .container-main > .subcontainer:last-child > .card-container-right {
+    padding-left: 0px;
+  }
+
+.container-main > main > .card-container-right > .card > .container > h4,.container-main > main > .card-container-right > .card > .container > p
+   {
+       padding-left: 10px;
+       max-width: 160px;
+   }
+
+  .popular_hebergement_img {
+    width: 45%;
+  }
+
   /** END CONTAINER MAIN **/
 
   /** CONTAINER ACTIVITE **/
+
+  .container-activite {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
   .container-activite > .h2_activite {
     padding-left: 0px;
     display: flex;
@@ -29,9 +100,5 @@
     align-items: center;
   }
 
-  .container-activite {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
   /** END CONTAINER ACTIVITE**/
 }
