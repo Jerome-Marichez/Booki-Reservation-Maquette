@@ -2,4 +2,4 @@
 @import "./styles.css"; /** IMPORT MAIN STYLES **/
 @import "./mediaquery/over1440px.css" (min-width: 1401px); /** IMPORT RULES FOR BIGGER SIZE **/
 @import "./mediaquery/tablette.css" (max-width: 993px); /** IMPORT RULES FOR TABLETTE SIZE & BELOW **/
-@import "./mediaquery/mobile.css" (max-width: 770px); /** IMPORT RULES FOR MOBILE SIZE & BELOW **/
+@import "./mediaquery/mobile.css" (max-width: 769px); /** IMPORT RULES FOR MOBILE SIZE & BELOW **/
