@@ -1,4 +1,3 @@
-
 /********************** GENERAL **********************/
 
 /** target all HTML TAG  **/
@@ -10,21 +9,20 @@
   --grey: #f2f2f2;
   --fontcolor: rgb(0, 0, 0);
   --shadowcolor: 0, 0, 0;
+  --brightness: 105%;
+  --saturates: 1.5;
 }
 
 * {
   box-sizing: border-box;
   font-family: "Raleway", sans-serif;
   font-weight: 500;
-  transition:0.2s; /** SET A GLOBAL TRANSITION FOR ALL ELEMENTS **/
+  transition: 0.2s; /** SET A GLOBAL TRANSITION FOR ALL ELEMENTS **/
 }
-
-
 
 body {
   background-color: var(--bg-color);
   -webkit-font-smoothing: antialiased;
-  
 }
 
 /** end target all HTML TAG **/
@@ -41,14 +39,21 @@ li {
 }
 
 .container-activite {
-    padding-left: 25px;
-    padding-right: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 .container-main {
   padding-left: 25px;
   padding-right: 25px;
 }
-p,h1,h2,h3,h4,h5,li,ul {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+li,
+ul {
   color: var(--fontcolor);
 }
 
@@ -56,8 +61,11 @@ h2 {
   margin-top: 0;
   margin-bottom: 0;
 }
-h2,h3,h4 { font-weight: bold; }
-
+h2,
+h3,
+h4 {
+  font-weight: bold;
+}
 
 button,
 input[type="button"],
@@ -71,15 +79,22 @@ input[type="reset"] {
   outline: inherit;
 }
 
+.logo,
+li,
+.card,
+.container-main > h3,
+body > div.container-main > div:nth-child(1) > h3,
+body > div.container-filter > div > div > input {
+  cursor: pointer;
+}
 
 .padding-20 {
   padding-top: 20px;
 }
 
 .margin-bottom-50 {
-    margin-bottom: 50px;
+  margin-bottom: 50px;
 }
-
 
 .fontawesome {
   font-family: "Font Awesome 6 Free";
@@ -111,7 +126,7 @@ input[type="reset"] {
 .nav-menu {
   display: flex;
   flex-wrap: wrap;
-  color: var(--black);
+  color: var(--fontcolor);
 }
 
 .border_active {
@@ -126,7 +141,7 @@ input[type="reset"] {
 }
 
 .nav-menu > ul > li:last-child {
-  color: var(--black);
+  color: var(--fontcolor);
   padding-right: 50px;
   padding-left: 50px;
 }
@@ -150,6 +165,7 @@ input[type="reset"] {
 .search-input-group > input[type="text"],
 textarea {
   background-color: var(--bg-color);
+  font-weight: bold;
 }
 
 .inputgps::before {
@@ -174,6 +190,10 @@ textarea {
   border-top-right-radius: 15px 15px;
   border-bottom-right-radius: 15px 15px;
   margin-left: -5px;
+}
+
+.search-input-group > .inputbutton:hover {
+  filter: saturate(var(--saturates));
 }
 
 .search-input-group > .inputclass {
@@ -205,11 +225,20 @@ textarea {
   display: flex;
   flex-direction: row;
   align-items: center;
-   flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .filter-input-group {
+  display:flex;
   padding-left: 25px;
+}
+
+.filter-input-group:hover button {
+  filter: saturate(var(--saturates));
+}
+
+.filter-input-group:hover input {
+  color: var(--blue);
 }
 
 .filter-input-group > .background_icone {
@@ -222,6 +251,7 @@ textarea {
 }
 
 .filter-input-group > .inputtext {
+  font-weight: bold;
   background-color: var(--white);
   border-radius: 43px / 35px;
   width: auto;
@@ -233,18 +263,18 @@ textarea {
 
 .filter-input-group > .size_economique,
 .size_romantique {
-  min-width: 180px;
-  max-width: 180px;
+  min-width: 185px;
+  max-width: 185px;
 }
 
 .filter-input-group > .size_animaux {
-  min-width: 225px;
-  max-width: 225px;
+  min-width: 230px;
+  max-width: 230px;
 }
 
 .filter-input-group > .size_familial {
-  min-width: 150px;
-  max-width: 150px;
+  min-width: 155px;
+  max-width: 155px;
 }
 
 .icone_romantique::before {
@@ -336,7 +366,9 @@ textarea {
 
 /** CARD COMPONENT HEBERGEMENT MARSEILLE **/
 
-
+.card:hover {
+  filter: brightness(var(--brightness));
+}
 .card {
   flex: 0 0 246px;
   /**margin-right: 20px;**/
@@ -357,7 +389,7 @@ textarea {
   border-radius: 20px 20px 0 0;
   max-height: 125px;
   height: auto;
-
+  object-fit: cover;
   width: 100%;
 }
 .img_100_percent {
@@ -396,6 +428,7 @@ textarea {
   padding-left: 10px;
 }
 .popular_hebergement_img {
+  object-fit: cover;
   border-radius: 20px 0px 0 20px;
   margin-left: 5px;
   height: 130px;
@@ -420,32 +453,28 @@ textarea {
 }
 
 .card-container-right {
-    display: inline;
+  display: inline;
 }
 .card-container-right > .card > .container {
-    padding-top: 5px;
+  padding-top: 5px;
 }
-.card-container-right > .card > .container > h4, .card-container-right > .card > .container > p 
-{
+.card-container-right > .card > .container > h4,
+.card-container-right > .card > .container > p {
   margin-top: 0;
   padding-bottom: 10px;
   padding-left: 22px;
   margin-block-start: 0;
   margin-block-end: 0;
-max-width: 180px;
-
-  
+  max-width: 180px;
 }
-.card-container-right > .card > .container > p 
-{
+.card-container-right > .card > .container > p {
   padding-bottom: 30px;
-
 }
 
 .bigicone_stars::before {
-    padding-right: 15px;
+  padding-right: 15px;
   content: "\f005";
-  color: var(--black);
+  color: var(--fontcolor);
   font-size: 21px;
 }
 
@@ -453,82 +482,62 @@ max-width: 180px;
 
 /********************** END MAIN (HEBERGEMENT MARSEILLE) SECTION  **********************/
 
-
-
 /********************** ACTIVITE MARSEILLE *****************************************/
 
-
-
-
-.container-activite > .subcontainer { 
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 20px;
-    padding-top: 30px;
-
-
+.container-activite > .subcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  padding-top: 30px;
 }
-
-
-
 
 .container_title_activite {
-    padding-bottom: 10px;
-    margin-left: 20px;
+  padding-bottom: 10px;
+  margin-left: 20px;
 }
-.activite_img  {
-    border-radius: 20px 20px 0 0;
-    max-width: 300px;
-    height: auto;
-    width: 100%;
- 
+.activite_img {
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+  max-width: 300px;
+  height: auto;
+  width: 100%;
 }
 
 .h2_activite {
-    padding-left: 50px;
-    
+  padding-left: 50px;
 }
-.picture1,.picture4  {
-    /** COULD BE REWORKED TO 385 px **/
-    height:415px;
-    max-height: 415px;
-}
-
-
-.picture2  {
-    height:181px;
-    max-height: 181px;
-    width: 300px;
+.picture1,
+.picture4 {
+  /** COULD BE REWORKED TO 385 px **/
+  height: 415px;
+  max-height: 415px;
 }
 
-
-.picture3  {
-    height:110px;
-    max-height: 110px;
+.picture2 {
+  height: 181px;
+  max-height: 181px;
+  width: 300px;
 }
 
-
-
-.picture5  {
-    height:140px;
-    max-height: 140px;
-    width: 300px;
+.picture3 {
+  height: 110px;
+  max-height: 110px;
 }
 
-
-.picture6  {
-   
-    height:150px;
-    max-height: 150px;
-    width: 300px;
+.picture5 {
+  height: 140px;
+  max-height: 140px;
+  width: 300px;
 }
 
-
-
+.picture6 {
+  height: 150px;
+  max-height: 150px;
+  width: 300px;
+}
 
 /********************** END ACTIVITE MARSEILLE *****************************************/
-
 
 /********************** FOOTER SECTION **********************/
 .container-footer {
@@ -539,31 +548,23 @@ max-width: 180px;
   padding-bottom: 50px;
   padding-top: 47px;
   margin-top: 60px;
-  
 }
 
-.container-footer > .subcontainer:nth-child(1)
-{
-    flex-grow: 1;
+.container-footer > .subcontainer:nth-child(1) {
+  flex-grow: 1;
 }
-.container-footer > .subcontainer:nth-child(2)
-{
-    flex-grow: 1;
-  
+.container-footer > .subcontainer:nth-child(2) {
+  flex-grow: 1;
 }
-.container-footer > .subcontainer:nth-child(3)
-{
-    flex-grow: 1;
-   
+.container-footer > .subcontainer:nth-child(3) {
+  flex-grow: 1;
 }
-.container-footer > .subcontainer > ul > li >  h3 { 
-    margin-block-start: 0;
-    padding-bottom: 27px;
-    margin-block-end: 0;
-
+.container-footer > .subcontainer > ul > li > h3 {
+  margin-block-start: 0;
+  padding-bottom: 27px;
+  margin-block-end: 0;
 }
 .container-footer > .subcontainer {
-
   display: flex;
   flex-direction: column;
 }
@@ -577,8 +578,5 @@ max-width: 180px;
 .container-footer > .subcontainer > ul > li {
   padding-top: 10px;
 }
-
-
-
 
 /********************** END FOOTER SECTION **********************/

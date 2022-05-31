@@ -1,0 +1,37 @@
+@media only screen and (max-width: 1441px) {
+  /** CONTAINER MAIN **/
+  .container-main {
+    flex-direction: column-reverse;
+  }
+  .container-main > .subcontainer:first-child {
+    margin-top: 30px;
+    /*flex: 0 0 100%;*/
+  }
+  .card-container-left > .card {
+    flex: 0 0 300px;
+  }
+
+  .container-main {
+    flex-wrap: wrap;
+  }
+  /** END CONTAINER MAIN **/
+
+  /** CONTAINER ACTIVITE **/
+  .container-activite > .h2_activite {
+    padding-left: 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .container-activite > .subcontainer {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container-activite {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  /** END CONTAINER ACTIVITE**/
+}
