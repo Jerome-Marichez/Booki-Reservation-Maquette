@@ -19,6 +19,11 @@
   font-weight: 500;
   transition: 0.2s; /** SET A GLOBAL TRANSITION FOR ALL ELEMENTS **/
 }
+a,
+a:visited {
+  text-decoration: none;
+  color: var(--fontcolor);
+}
 
 body {
   background-color: var(--bg-color);
@@ -182,7 +187,9 @@ textarea {
   background-color: var(--bg-color);
   font-weight: bold;
 }
-
+.inputbutton_mobile {
+  display: none;
+}
 .inputgps::before {
   content: "\f3c5";
 }
@@ -260,12 +267,13 @@ textarea {
 .filter-input-group > .background_icone {
   position: absolute;
   background-color: var(--lightblue);
-  margin-left: 1px;
   width: 45px;
   height: 45px;
   border-radius: 50%;
 }
-
+.filter-input-group > input[type="text"] {
+  padding-left: 60px;
+}
 .filter-input-group > .inputtext {
   font-weight: bold;
   background-color: var(--white);
@@ -462,7 +470,7 @@ textarea {
   justify-content: flex-start;
   align-items: center;
   margin-bottom: 40px;
-  width: 344px;
+  min-width: 344px;
   height: 142px;
 }
 

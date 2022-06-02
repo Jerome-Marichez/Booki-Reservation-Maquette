@@ -1,13 +1,16 @@
-@media only screen and (min-width:769px) and (max-width: 993px) {
+@media only screen and (min-width: 769px) and (max-width: 993px) {
   /** GENERAL**/
   .title_center_flex {
     display: flex;
     justify-content: space-around;
   }
+  /** END GENERAL **/
+
+  /** HEADER **/
   .logo {
     padding-left: 0%;
   }
-  /** END GENERAL **/
+  /** END HEADER **/
 
   /** CONTAINER FILTER **/
   .container-filter > .subcontainer > .filter-input-group:last-child {
