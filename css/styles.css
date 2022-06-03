@@ -21,8 +21,8 @@
 }
 a,
 a:visited {
-  text-decoration: none;
-  color: var(--fontcolor);
+ color: inherit;
+  text-decoration: inherit; 
 }
 
 body {
@@ -85,10 +85,9 @@ input[type="reset"] {
 }
 
 .logo,
-li,
+.flex_linknav,
 .card,
-.container-main > h3,
-body > div.container-main > div:nth-child(1) > h3,
+a,
 body > div.container-filter > div > div > input {
   cursor: pointer;
 }
