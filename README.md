@@ -7,6 +7,8 @@ _____________________________________________________________________
 -> VSCODE
 -> GIMP
 -> PixelPefect (extension chrome)
+-> YellowLab Tools 
+-> DigitalOcean 
 
 # Librairie 
 FontAwesome 6 
