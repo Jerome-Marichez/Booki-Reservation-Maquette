@@ -7,6 +7,7 @@ _____________________________________________________________________
 -> VSCODE
 -> GIMP
 -> PixelPefect (extension chrome)
+-> GitHub
 -> YellowLab Tools / pagespeed.web.dev (Google)
 -> DigitalOcean 
 
