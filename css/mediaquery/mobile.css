@@ -43,7 +43,7 @@
   .nav-menu {
     width: 100%;
   }
-  .nav-menu > ul {
+  .nav-menu > .ul {
     padding-inline-start: 0px;
     flex: 0 0 100%;
     justify-content: flex-start;
@@ -54,7 +54,7 @@
     flex: 0 0 50%;
     flex-direction: column-reverse;
   }
-  .flex_linknav:nth-child(2) > li {
+  .ul > div:nth-child(2) > li {
     margin-left: 0px;
   }
   .flex_linknav:hover > .border_active {

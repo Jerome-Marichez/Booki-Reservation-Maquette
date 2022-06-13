@@ -21,8 +21,8 @@
 }
 a,
 a:visited {
- color: inherit;
-  text-decoration: inherit; 
+  color: inherit;
+  text-decoration: inherit;
 }
 
 body {
@@ -34,7 +34,7 @@ body {
 
 li {
   list-style: none;
-  font-size: 18px;
+  /** font-size: 18px;**/
 }
 
 .container-search,
@@ -58,7 +58,7 @@ h3,
 h4,
 h5,
 li,
-ul {
+.ul {
   color: var(--fontcolor);
 }
 
@@ -133,12 +133,12 @@ body > div.container-filter > div > div > input {
   color: var(--fontcolor);
 }
 
-.nav-menu > ul {
+.nav-menu > .ul {
   display: flex;
   margin-block-start: 0em;
 }
 
-body > header > nav > ul > div:nth-child(2) > li {
+.ul > div:nth-child(2) > li {
   margin-left: 25px;
 }
 
