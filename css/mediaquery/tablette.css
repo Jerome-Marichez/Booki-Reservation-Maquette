@@ -70,8 +70,8 @@
     padding-left: 0px;
   }
 
-  .container-main > main > .card-container-right > .card .container  h4,
-  .container-main > main > .card-container-right > .card .container  p {
+  .container-main > main > .card-container-right > .card .container h4,
+  .container-main > main > .card-container-right > .card .container p {
     padding-left: 10px;
     max-width: 160px;
   }
