@@ -120,7 +120,7 @@
     align-items: baseline;
   }
   .container-filter > .subcontainer:last-child > p {
-    width: 85%;
+    width: 87%;
   }
   .filter-input-group {
     padding-left: 0;
@@ -192,7 +192,6 @@
   .container-main > .subcontainer > .card-container-right {
     display: flex;
     flex-wrap: wrap;
-
     justify-content: center;
   }
 
@@ -245,15 +244,15 @@
     padding-top: 40px;
   }
 
-  .container-main > main > .card-container-right > .card > .container > h4,
-  .container-main > main > .card-container-right > .card > .container > p {
+.card-container-right > .card .container h4,
+.card-container-right > .card .container p {
     padding-left: 10px;
-    max-width: 160px;
+  
   }
 
   .rating_popular {
     padding-left: 10px;
-    padding-bottom: 5px;
+    padding-bottom: 0px;
   }
   .popular_hebergement_img {
     min-height: 143px;

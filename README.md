@@ -10,6 +10,7 @@ _____________________________________________________________________
 -> GitHub
 -> YellowLab Tools / pagespeed.web.dev (Google)
 -> DigitalOcean 
+-> Validator W3
 
 # Librairie 
 FontAwesome 6 
