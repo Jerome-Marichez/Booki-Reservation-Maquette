@@ -8,13 +8,13 @@
 
   /** HEADER **/
   .logo {
-    padding-left: 0%;
+    padding-left: 0;
   }
   /** END HEADER **/
 
   /** CONTAINER FILTER **/
   .container-filter > .subcontainer > .filter-input-group:last-child {
-    margin-left: 63px;
+    margin-left: 58px;
   }
   /** END CONTAINER FILTER **/
 
@@ -51,7 +51,7 @@
 
   .container-main > .subcontainer:last-child > .card-container-right > .card {
     flex: 0 0 48%;
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 
   .container-main
@@ -90,7 +90,7 @@
   }
 
   .container-activite > .h2_activite {
-    padding-left: 0px;
+    padding-left: 0;
     display: flex;
     align-items: center;
     flex-direction: column;

@@ -7,6 +7,7 @@
   --blue: #0065fc;
   --lightblue: #deebff;
   --grey: #f2f2f2;
+  --darkgrey: #d9d9d9;
   --fontcolor: rgb(0, 0, 0);
   --shadowcolor: 0, 0, 0;
   --brightness: 108%;
@@ -57,8 +58,7 @@ h2,
 h3,
 h4,
 h5,
-li,
-.ul {
+li {
   color: var(--fontcolor);
 }
 
@@ -85,7 +85,6 @@ input[type="reset"] {
 }
 
 .logo,
-.flex_linknav,
 .card,
 a,
 body > div.container-filter > div > div > input {
@@ -128,41 +127,31 @@ body > div.container-filter > div > div > input {
 }
 
 .nav-menu {
+  margin-right: 25px;
   display: flex;
   flex-wrap: wrap;
   color: var(--fontcolor);
 }
 
-.nav-menu > .ul {
+.nav-menu ul {
   display: flex;
-  margin-block-start: 0em;
+  margin-block-start: 0;
 }
 
-.ul > div:nth-child(2) > li {
+.nav-menu ul li {
+  border-top: 2px solid var(--bg-color);
   margin-left: 25px;
+  padding: 20px;
+  padding-top: 45px;
 }
 
-.border_active {
-  border-top: 2px solid;
+.nav-menu ul li:hover {
+  border-top: 2px solid var(--blue);
   color: var(--blue);
-  width: 170px;
-
-  margin-left: -25px;
-
-  padding-bottom: 45px;
-  visibility: hidden;
 }
 
-.border_active:last-child {
-  width: 100px;
-}
-
-.flex_linknav:hover > .border_active {
-  visibility: visible;
-}
-
-.flex_linknav:hover > .linknav {
-  color: var(--blue);
+.nav-menu li:first-child {
+  margin-left: 0;
 }
 
 /********************** END HEADER **********************/
@@ -236,7 +225,6 @@ textarea {
 /********************** FILTER SECTION **********************/
 .container-filter {
   padding-top: 15px;
-
   display: flex;
   flex-direction: column;
 }
@@ -261,6 +249,7 @@ textarea {
 
 .filter-input-group:hover input {
   color: var(--blue);
+  cursor: pointer;
 }
 
 .filter-input-group > .background_icone {
@@ -279,7 +268,7 @@ textarea {
   border-radius: 43px / 35px;
   width: auto;
   border: 2px solid;
-  border-color: var(--grey);
+  border-color: var(--darkgrey);
   height: 35px;
   padding: 20px;
 }
@@ -476,7 +465,7 @@ textarea {
 .rating_popular {
   display: flex;
   padding-left: 20px;
-  padding-bottom: 0px;
+  padding-bottom: 0;
 }
 
 .card-container-right {
@@ -598,8 +587,8 @@ textarea {
 
 .container-footer > .subcontainer > ul {
   margin: 0;
-  margin-block-end: 0em;
-  padding-inline-start: 0px;
+  margin-block-end: 0;
+  padding-inline-start: 0;
 }
 
 .container-footer > .subcontainer > ul > li {
