@@ -3,3 +3,4 @@
 @import "./mediaquery/over1440px.css" (min-width: 1401px); /** IMPORT RULES FOR BIGGER SIZE **/
 @import "./mediaquery/tablette.css" (max-width: 993px); /** IMPORT RULES FOR TABLETTE SIZE  **/
 @import "./mediaquery/mobile.css" (max-width: 769px); /** IMPORT RULES FOR MOBILE SIZE  **/
+@import "./mediaquery/middle-desktop-screen.css" (min-width: 994px); /** IMPORT FOR  DESKTOP SCREEN BETWEEN 994px & 1440px **/
