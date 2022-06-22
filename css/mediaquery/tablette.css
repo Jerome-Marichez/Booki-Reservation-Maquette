@@ -96,6 +96,7 @@
   }
 
   .container-activite > .subcontainer {
+     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
   }

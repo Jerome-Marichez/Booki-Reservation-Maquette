@@ -504,7 +504,7 @@ textarea {
 
 .container-activite > .subcontainer {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-around;
   gap: 20px;
   padding-top: 30px;
