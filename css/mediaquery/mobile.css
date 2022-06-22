@@ -158,6 +158,10 @@
     max-width: 140px;
   }
 
+  .filter-input-group > .inputtext {
+    border-radius: 43px / 35px;
+  }
+
   .icone_info {
     margin-left: 1px;
     width: 25px;
@@ -244,10 +248,9 @@
     padding-top: 40px;
   }
 
-.card-container-right > .card .container h4,
-.card-container-right > .card .container p {
+  .card-container-right > .card .container h4,
+  .card-container-right > .card .container p {
     padding-left: 10px;
-  
   }
 
   .rating_popular {
