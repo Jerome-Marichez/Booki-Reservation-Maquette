@@ -35,11 +35,9 @@ Avant de valider définitivement ce design, l’entreprise décide de réaliser 
 ## Outils et technos utilisés
 ### Outils
  - Github
- - Github Pages
- - GitKraken
  - Visual Studio Code + plugins LiveServer
  - Font Awsome
- - Photoshop
+ - GIMP
  - Validateur W3C pour [HTML](https://validator.w3.org/) et [CSS](https://jigsaw.w3.org/css-validator/#validate_by_upload)
 
 ### Technos
